@@ -20,7 +20,7 @@ function landingPageAnimation() {
   });
 
   tl.from(
-    ".page1-left h1 , p ,.menu",
+    ".page1-left h1 , .page1-left p , .page1-menu .menu , .page1-left .buttons",
     {
       opacity: 0,
       x: -40,
@@ -38,6 +38,11 @@ function landingPageAnimation() {
     },
     "same"
   );
+  // tl.from(".buttons", {
+  //   opacity: 0,
+  //   duration:-1
+    
+  // });
 
   gsap.to(".page1-right img", {
     y: 15,
@@ -47,10 +52,7 @@ function landingPageAnimation() {
     ease: "rough",
   });
 
-  tl.from(".buttons", {
-    opacity: 0,
-    duration: 0.5,
-  });
+ 
 }
 function burgerMenuAnimation() {
   burgerMenu.from(".hamburger", {
