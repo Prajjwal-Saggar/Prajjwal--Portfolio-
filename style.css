@@ -194,7 +194,7 @@ button:hover {
   .nav {
     padding: 15px 20px 10px 25px;
   }
-  .nav-part2 h1 {
+  .nav-part2 a{
     display: none;
   }
 

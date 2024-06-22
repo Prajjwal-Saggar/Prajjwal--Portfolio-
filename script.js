@@ -20,7 +20,7 @@ function landingPageAnimation() {
   });
 
   tl.from(
-    ".page1-left h1 , .page1-left p , .page1-menu .menu , .page1-left .buttons",
+    ".page1-left h1 , .page1-left p , .menu , .page1-left .buttons",
     {
       opacity: 0,
       x: -40,
