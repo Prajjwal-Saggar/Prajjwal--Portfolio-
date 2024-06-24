@@ -1,4 +1,7 @@
 var tl = gsap.timeline();
+var gb1 = document.querySelector(".go-back1");
+var gb2 = document.querySelector(".go-back2");
+var gb3 = document.querySelector(".go-back3");
 
 var burgerMenu = gsap.timeline();
 var menuHam = document.querySelector(".menu i");
@@ -52,6 +55,13 @@ function landingPageAnimation() {
     ease: "rough",
   });
 
+  gsap.to(".about-me-image img",{
+    y: 15,
+    repeat: -1,
+    yoyo: true,
+    duration: 0.8,
+    ease: "rough",
+  })
  
 }
 function burgerMenuAnimation() {
@@ -82,5 +92,16 @@ menuHam.addEventListener("click", () => {
 });
 
 close.addEventListener("click", () => {
+  burgerMenu.reverse();
+});
+
+
+gb1.addEventListener("click", () => {
+  burgerMenu.reverse();
+});
+gb2.addEventListener("click", () => {
+  burgerMenu.reverse();
+});
+gb3.addEventListener("click", () => {
   burgerMenu.reverse();
 });

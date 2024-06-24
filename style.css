@@ -30,16 +30,15 @@ body {
   display: none;
 }
 
-
 @media (max-width: 768px) {
-  .page1, .page2 {
+  .page1,
+  .page2 {
     flex-direction: column;
   }
 
   .page1-left h1 {
     font-size: 28px;
   }
- 
 
   .page1-left p {
     font-size: 16px;
@@ -58,7 +57,6 @@ body {
     max-width: 300px;
   }
 }
-
 
 .page1-left {
   width: 50%;
@@ -88,7 +86,7 @@ h1 span {
   font-size: 90px;
 }
 
-.page1-left h1 span {
+.colorful{
   background: #534ecf;
   background: linear-gradient(to right, #534ecf 0%, #cf1478 56%);
   -webkit-background-clip: text;
@@ -109,6 +107,7 @@ h1 span {
   justify-content: space-between;
   color: white;
   font-family: "Rubik", sans-serif;
+  position: fixed;
 }
 .nav h1 {
   font-weight: 500;
@@ -164,10 +163,15 @@ button:hover {
     flex-direction: column-reverse;
     justify-content: start;
     align-items: center;
+  
   }
+ 
   .page1-right {
+    margin-top: 70px;
     width: 100%;
     height: 50%;
+    
+    
   }
 
   .page1-left {
@@ -190,11 +194,14 @@ button:hover {
   .page1-left h1 span {
     font-size: 45px;
   }
-
+  
   .nav {
     padding: 15px 20px 10px 25px;
+    z-index: 25;
+    /* background-color: bisque; */
+    
   }
-  .nav-part2 a{
+  .nav-part2 a {
     display: none;
   }
 
@@ -220,8 +227,9 @@ button:hover {
 
   .hamburger {
     position: absolute;
-    z-index: 10;
+  
     /* background-color: rgb(101, 112, 50); */
+    /* background-color: aquamarine !important; */
     width: 90%;
     height: 575px;
     top: 0;
@@ -244,9 +252,11 @@ button:hover {
     font-size: 2.25em;
     font-family: "Rubik", sans-serif;
     letter-spacing: 1px;
+   
   }
   .entire-menu {
     display: block;
+   
   }
 
   .hamburger i {
@@ -258,7 +268,6 @@ button:hover {
     font-weight: 600;
   }
 
- 
   .page2 h2 {
     font-size: 28px;
   }
@@ -276,8 +285,8 @@ button:hover {
     font-size: 14px;
     text-wrap: pretty;
     font-weight: 500;
-    
   }
+  
 }
 
 /* Page 2 begins Here  */
@@ -292,13 +301,14 @@ button:hover {
     rgba(44, 52, 77, 1) 81%
   );
   display: flex;
-  /* justify-content: space-around; */
-  
+ 
+  /* justify-content: center; */
+
   align-items: center;
   padding: 50px 0 100px 0;
   flex-direction: column;
   text-align: center;
-  gap:5rem;
+  gap: 3rem;
 }
 
 .page2 h2 {
@@ -307,7 +317,6 @@ button:hover {
   letter-spacing: 1px;
   color: white;
   font-family: "Rubik", sans-serif;
-
 }
 
 .skills-container {
@@ -320,11 +329,11 @@ button:hover {
 
 .skill-card {
   background: rgba(255, 255, 255, 0.224);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7px );
-  -webkit-backdrop-filter: blur( 7px );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
   padding: 20px;
   width: 250px;
@@ -343,13 +352,11 @@ button:hover {
   margin-bottom: 10px;
   font-size: 20px;
   font-family: "Rubik", sans-serif;
-
 }
 
 .skill-card p {
   font-size: 14px;
   font-family: "Rubik", sans-serif;
-
 }
 
 .skill-card:hover {
@@ -371,5 +378,91 @@ button:hover {
   }
 }
 
+/* page 3 begis here  */
 
+.page3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(
+    122deg,
+    rgba(32, 37, 50, 1) 25%,
+    rgba(44, 52, 77, 1) 81%
+  );
+}
 
+.about-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+
+  width: 85%;
+  height: 700px;
+}
+
+.about-me-content {
+  width: 650px;
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.about-me-content h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 35px;
+}
+
+.about-me-content p {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 2;
+  font-weight: 500;
+  text-wrap: pretty;
+}
+
+.about-me-image img {
+  width: 700px;
+
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media(200px<width<550px) {
+  .page3{
+    padding: 15px;
+  }
+  .about-me-container {
+    flex-direction: column;
+    text-align: center;
+    /* background-color: chocolate; */
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+
+    
+   
+  }
+
+  .about-me-content{
+    padding: 10px;
+    width: 100%;
+  }
+  .about-me-content p{
+    line-height: 1.2;
+    text-wrap: balance;
+    font-weight: 400;
+    text-align: start;
+  }
+  .about-me-image img {
+    max-width: 350px;
+    margin-top: 15px;
+  }
+}
