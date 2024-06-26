@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -15,14 +15,17 @@
       <div class="nav">
         <h1 id="logo">Prajjwal.</h1>
         <div class="nav-part2">
-          <a href="#home">Home</a><a href="#skills">Skills</a><a href="#about">About Me</a
-          ><a href="">Contact</a>
+          <a href="#home">Home</a><a href="#skills">Skills</a
+          ><a href="#about">About Me</a
+          >
         </div>
         <div class="entire-menu">
           <div class="menu"><i class="ri-menu-3-line"></i></div>
           <div class="hamburger">
             <i class="ri-close-large-fill"></i>
-           <a class="go-back1" href="#skills">Skills</a> <a class="go-back2" href="#about">About</a><a class="go-back3" href="">Contact Me</a>
+            <a class="go-back1" href="#home">Home</a>
+            <a class="go-back2" href="#skills">Skills</a
+              ><a class="go-back3" href="#about">About</a>
           </div>
         </div>
       </div>
@@ -31,29 +34,28 @@
           <h1>Web Development with <span class="colorful">Prajjwal</span></h1>
           <p>I am Prajjwal Saggar, Web Developer with 2 years of expereince</p>
           <div class="buttons">
-            <button>Ping Me 👋</button
-            ><button>Github <i class="ri-github-fill"></i></button>
+          <a href=""><button>LinkedIn <i class="ri-linkedin-box-fill"></i></button></a><a href="https://github.com/Prajjwal-Saggar"> <button>Github <i class="ri-github-fill"></i></button></a>
           </div>
         </div>
         <div class="page1-right">
-          <img src="./Images/full_stack_devlopment_banner.png" alt="" />
+          <img src="./public/Images/full_stack_devlopment_banner.png" alt="" />
         </div>
       </div>
       <div id="skills" class="page2">
-        <h2 >Skills</h2>
+        <h2>Skills</h2>
         <div class="skills-container">
           <div class="skill-card">
-            <img src="./Images/icons8-react-100.png" alt="React" />
+            <img src="/public/Images/icons8-react-100.png" alt="React" />
             <h3>React</h3>
             <p>A JavaScript library for building user interfaces.</p>
           </div>
           <div class="skill-card">
-            <img src="./Images/icons8-express-.png" alt="Express" />
+            <img src="/public/Images/icons8-express-.png" alt="Express" />
             <h3>Express</h3>
             <p>A minimal and flexible Node.js web application framework.</p>
           </div>
           <div class="skill-card">
-            <img src="./Images/icons8-mongo-db-48.png" alt="MongoDB" />
+            <img src="/public/Images/icons8-mongo-db-48.png" alt="MongoDB" />
             <h3>MongoDB</h3>
             <p>
               A document-oriented NoSQL database used for high volume data
@@ -61,12 +63,12 @@
             </p>
           </div>
           <div class="skill-card">
-            <img src="./Images/icons8-node-js-48.png" alt="Node.js" />
+            <img src="/public/Images/icons8-node-js-48.png" alt="Node.js" />
             <h3>Node.js</h3>
             <p>A JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
           </div>
           <div class="skill-card">
-            <img src="./Images/icons8-c-48.png" alt="C++" />
+            <img src="/public/Images/icons8-c-48.png" alt="C++" />
             <h3>C++</h3>
             <p>
               A general-purpose programming language created as an extension of
@@ -74,14 +76,14 @@
             </p>
           </div>
           <div class="skill-card">
-            <img src="./Images/GreenSock-GSAP.png" alt="GSAP" />
+            <img src="/public/Images/GreenSock-GSAP.png" alt="GSAP" />
             <h3>GSAP</h3>
             <p>
               A JavaScript library for creating high-performance animations.
             </p>
           </div>
           <div class="skill-card">
-            <img src="./Images/icons8-tailwind-css-48.png" alt="Tailwind" />
+            <img src="/public/Images/icons8-tailwind-css-48.png" alt="Tailwind" />
             <h3>Tailwind</h3>
             <p>
               A utility-first CSS framework for rapidly building custom user
@@ -89,7 +91,7 @@
             </p>
           </div>
           <div class="skill-card">
-            <img src="./Images/js.png" alt="JavaScript Logo" />
+            <img src="/public/Images/js.png" alt="JavaScript Logo" />
             <h3>JavaScript</h3>
             <p>
               JavaScript is a versatile, high-level programming language used
@@ -97,7 +99,7 @@
             </p>
           </div>
           <div class="skill-card">
-            <img src="./Images/icons8-java-94.png" alt="Java Logo" />
+            <img src="/public/Images/icons8-java-94.png" alt="Java Logo" />
             <h3>Java</h3>
             <p>
               Java is a class-based, object-oriented programming language that
@@ -106,7 +108,7 @@
             </p>
           </div>
           <div class="skill-card">
-            <img src="./Images/icons8-python-48.png" alt="Python Logo" />
+            <img src="/public/Images/icons8-python-48.png" alt="Python Logo" />
             <h3>Python</h3>
             <p>
               Python is an interpreted, high-level, general-purpose programming
@@ -118,14 +120,16 @@
       <div class="page3" id="about">
         <div class="about-me-container">
           <div class="about-me-image">
-            <img src="./Images/about-me.png" alt="About Me" />
+            <img src="/public/Images/about-me.png" alt="About Me" />
           </div>
           <div class="about-me-content">
             <h2>About Me</h2>
             <p>
-              Hello! I'm <span class="colorful">Prajjwal Saggar</span> , a second-year B.Tech CSE student at
-              <span class="colorful">VIT Chennai.</span> Passionate about technology and web development, I'm
-              always eager to learn more and take on new challenges.
+              Hello! I'm <span class="colorful">Prajjwal Saggar</span> , a
+              second-year B.Tech CSE student at
+              <span class="colorful">VIT Chennai.</span> Passionate about
+              technology and web development, I'm always eager to learn more and
+              take on new challenges.
             </p>
             <p>
               My journey in tech started with basic programming and has since
@@ -135,6 +139,26 @@
           </div>
         </div>
       </div>
+      <div class="footer">
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-logo">
+              <h1 id="footer-logo" class="colorful">Prajjwal.</h1>
+            </div>
+            <div class="footer-links">
+              <a href="#home">Home</a>
+              <a href="#skills">Skills</a>
+              <a href="#about">About Me</a>
+            </div>
+            <div class="footer-social">
+              <a href=""><i class="ri-linkedin-box-fill"></i></a>
+              <a href="https://github.com/Prajjwal-Saggar"><i class="ri-github-fill"></i></a>
+            </div>
+            <p class="footer-copyright">&copy; 2024 Prajjwal Saggar. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+
     </div>
 
     <script
