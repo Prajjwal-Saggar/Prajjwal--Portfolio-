@@ -14,7 +14,7 @@ function landingPageAnimation() {
     opacity: 0,
   });
 
-  tl.from(".nav-part2 h1", {
+  tl.from(".nav-part2 a", {
     y: -20,
     opacity: 0,
     stagger: {
